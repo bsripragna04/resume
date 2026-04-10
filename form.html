@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Resume Form</h2>
+
+<form method="POST">
+
+    <label>NAME:</label>
+    <input class="form-control mb-2" name="name" placeholder="Full Name"><br><br>
+    <label>EMAIL</label>
+    <input class="form-control mb-2" name="email" placeholder="Email"><br><br>
+    <label>PHONE</label>
+    <input class="form-control mb-2" name="phone" placeholder="Phone"><br><br>
+    <labe>LINKEDIN</label>
+        <input class="form-control mb-2" name="linkedin" placeholder="LinkedIn username"><br><br>
+         <labe>GITHUB</label>
+        <input class="form-control mb-2" name="github" placeholder="GitHub username"><br><br>
+    <label>SKILLS</label>
+    <textarea class="form-control mb-2" name="skills" placeholder="Skills(include technical skills also)"></textarea><br><br>
+    <label>EDUCATION</label>
+    <textarea class="form-control mb-2" name="education" placeholder="Education"></textarea><br><br>
+    <label>Projects</label>
+    <textarea class="form-control mb-2" name="projects" placeholder="Projects"></textarea><br><br>
+    <label>Certifications</label>
+    <textarea class="form-control mb-2" name="certify" placeholder="certificates"></textarea><br><br>
+    <label>EXPERIENCE</label>
+    <textarea class="form-control mb-2" name="experience" placeholder="Experience"></textarea><br><br>
+       <label>STRENGTH</label>
+    <textarea class="form-control mb-2" name="strength" placeholder="Strength"></textarea><br><br>
+    <h3>Personal Details</h3>
+    <label>Language known:</label>    
+    <input class="form-control mb-2" name="lng" placeholder="language"><br><br>
+    <label>Address:</label>
+    <input class="form-control mb-2" name="address" placeholder="address"><br><br>
+    <button class="btn btn-success">Generate Resume</button>
+</form>
+{% endblock %}
